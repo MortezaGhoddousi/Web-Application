@@ -1,0 +1,14 @@
+.container,
+.container-fluid {
+    background: gray;
+    /* height: 100px; */
+    margin: 15px;
+}
+
+#fixed {
+    background: rgb(27, 27, 27);
+}
+
+#fluid {
+    background: rgb(201, 201, 201);
+}

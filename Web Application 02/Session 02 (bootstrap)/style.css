@@ -1,0 +1,15 @@
+section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.container-fluid,
+.container {
+    margin: 50px auto;
+    height: 200px;
+}
+
+.row {
+    margin-top: 20px;
+}

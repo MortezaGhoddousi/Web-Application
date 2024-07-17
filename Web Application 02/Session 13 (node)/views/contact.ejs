@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WA 02</title>
+    <link rel="stylesheet" href="../public/style.css">
+
+</head>
+<body>
+    <%- include('./partials/nav'); %>
+    <h1>Contact Us!</h1>
+    <p>Contact the collest cats on the web right here...</p>
+
+    <form method="POST" action="/contact">
+        <label for="who">Who do you want to contact?</label>
+        <input type="text" name="who" value="<%= qs.who %>">
+
+        <label for="department">Which department?</label>
+        <input type="text" name="department" value="<%= qs.dept %>">
+
+        <label for="email">Your email</label>
+        <input type="email" name="email" value="<%= email %>">
+        
+        <label for="submit">
+            <input type="submit" value="submit">
+        </label>
+    </form>
+</body>
+</html>

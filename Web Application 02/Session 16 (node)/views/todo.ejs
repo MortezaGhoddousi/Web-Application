@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO LIST</title>
+    <link rel="stylesheet" href="../public/assests/style.css">
+    <script src="../public/assests/script.js"></script>
+</head>
+<body>
+    <div id="todo-table">
+        <form>
+            <input type="text" name="item" placeholder="Add new item..." required />
+            <button type="submit">Add Item</button>
+        </form>
+        <table>
+                <% for(let i=0; i < todos.length; i++){ %>
+                    <tr>
+                        <td><%= todos[i].task %></td>
+                        <td class="x">
+                            x
+                        </td>
+                    </tr>
+                <% } %>
+        </table>
+    </div>
+
+
+</body>
+</html>

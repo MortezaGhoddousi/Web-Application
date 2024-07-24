@@ -1,0 +1,56 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body {
+    scroll-behavior: smooth;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: skyblue;
+    color: #ddd;
+}
+
+#todo-table,
+#todo-table form,
+#todo-table table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+    gap: 20px;
+}
+
+#todo-table table {
+    padding: 10px;
+}
+
+#todo-table table td {
+    width: 25vw;
+}
+
+#todo-table form input {
+    width: 20vw;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#todo-table form button {
+    width: 100px;
+    border: none;
+    border-radius: 10px;
+    color: #222;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.x {
+    cursor: pointer;
+}

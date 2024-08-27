@@ -1,0 +1,46 @@
+import { useState } from "react";
+import axios from 'axios';
+
+function Login () {
+
+    axios.defaults.withCredentials = true;
+
+    const [user, setUser] = useState({
+        username: '',
+        password: ''
+    })
+
+
+    const handleChange = (e) => {
+        setUser({...user, [e.target.id]: e.target.value});
+    }
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        axios.post("http://localhost:3000/api/user/login", {user: user})
+        .then((result) => {
+            setUser({
+                username: '',
+                password: '' 
+                })
+            })
+        .catch(err => console.log(err));
+    }
+
+    return ( 
+        <form onSubmit={handleSubmit}>
+            <h2>Login</h2>
+            <label htmlFor="username">
+                <input type="text" placeholder="username" id="username" value={user.username} onChange={handleChange} />
+            </label>
+            <label htmlFor="password">
+                <input type="password" placeholder="password" id="password" value={user.password} onChange={handleChange} />
+            </label>
+            <label htmlFor="submit">
+                <input type="submit" value="Login" id="submit" />
+            </label>
+        </form>
+    );
+}
+
+export default Login;

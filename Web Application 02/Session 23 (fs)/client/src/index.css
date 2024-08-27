@@ -1,0 +1,107 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+nav {
+    width: 100vw;
+    background: #222;
+    color: rgba(248, 122, 37, 0.945);
+    padding: 10px 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;   
+}
+
+nav ul {
+    justify-self: end;
+    display: grid;
+    grid-template-columns: 70px 70px;
+    column-gap: 2px;  
+}
+
+nav a {
+    color: rgba(248, 122, 37, 0.945);
+    text-decoration: none;
+}
+
+nav > a {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+main {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 50px; 
+}
+
+main h1,
+main ul,
+main form {
+    justify-self: center;
+    align-items: center;
+} 
+
+main h1 {
+    color: rgba(248, 122, 37, 0.945);
+}
+
+main ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 10px;
+}
+
+main ul div {
+    display: grid;
+    grid-template-columns: 1fr 17px;
+    column-gap: 40px; 
+}
+
+main ul div button {
+    border: none;
+    outline: none;
+    background: #fff;
+    color: rgba(248, 122, 37, 0.945);
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-align: center;
+    cursor: pointer;
+    height: auto;
+}
+
+main ul div li {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+main form {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+main form label {
+    justify-self: center;
+    align-self: center;
+}
+
+main form label input[type="text"] {
+    width: 300px;
+    padding: 7px;
+    border-radius: 7px;
+}
+
+main form label input[type="submit"] {
+    padding: 7px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+}

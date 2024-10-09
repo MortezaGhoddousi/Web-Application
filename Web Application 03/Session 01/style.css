@@ -1,0 +1,26 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* body {
+    background-color: gray;
+} */
+
+#div {
+    height: 100px;
+    background-color: gray;
+    border: 2px solid black;
+    /* margin: 10px; */
+}
+
+/* .container {
+    background-color: green;
+    border: 2px solid;
+} */
+
+.container-fluid {
+    background-color: red;
+    border: 2px solid;
+}

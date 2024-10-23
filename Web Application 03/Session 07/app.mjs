@@ -55,7 +55,7 @@ app.post('/api/adduser', (req, res) => {
     addUser(req.body)
     .then((results) => {
         if (results) {
-            res.send({STATUS: "DATA INSERTED SUCCESSFULLY"})
+            res.status(201).send({STATUS: "DATA INSERTED SUCCESSFULLY"})
         }
     })
     .catch(err => res.status(404).send({ERROR: err}))
@@ -84,4 +84,6 @@ app.delete('/api/users/:id', (req, res) => {
 app.listen(3000, function(){
     console.log('Now server is listening to port 3000');
 })
+
+module.exports = app;
 

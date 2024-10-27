@@ -1,0 +1,13 @@
+#root {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+
+}
+
+.section {
+    padding: 10px;
+    border: 2px solid;
+    border-radius: 10px;
+
+}

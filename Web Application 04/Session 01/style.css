@@ -1,0 +1,10 @@
+.container {
+    background-color: gray;
+    padding: 20px;
+}
+
+.row div {
+    background-color: red;
+    height: 50px;
+    border: 2px solid black;
+}
